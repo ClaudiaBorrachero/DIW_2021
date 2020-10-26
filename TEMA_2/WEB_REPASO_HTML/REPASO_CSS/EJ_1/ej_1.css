@@ -1,0 +1,24 @@
+li:first-child {
+    color: blue;
+    font-size: small;
+}
+
+li:nth-last-child(4) {
+    color: black;
+    font-size: small;
+}
+
+li:nth-last-child(3) {
+    color: black;
+    font-size: medium;
+}
+
+li:nth-last-child(2) {
+    color: black;
+    font-size: large;
+}
+
+li:last-child {
+    color: blue;
+    font-size: larger;
+}

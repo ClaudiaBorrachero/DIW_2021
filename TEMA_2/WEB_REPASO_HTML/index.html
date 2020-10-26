@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPASO HTML/CSS</title>
+    <link rel="icon" href="img/icono.jpg"type="image/png">
+    <link rel="stylesheet" href="css/css.css">
+    <!-- External fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        footer:last-child{
+            font-weight: bolder;
+        }
+        tbody > tr > td:last-child{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body ondragstart="return false;">
+    <header>
+        <nav>
+            <a href="#inicio"> INICIO</a>
+            <a href="#proyectos">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <!-- Personal information -->
+    <div  id="inicio" class="text-center bg-primary py-3 pt-5">
+        <img src="img/user-image.png" alt="foto" class="img-user">
+        <div>
+            <hr class="hr-secondary">
+            <h1 class="text-light text-normal"><b>Claudia Nerea</b> Borrachero Mallofret</h1>
+        </div>
+    </div>
+    <!-- . Personal information -->
+
+    <!-- Container -->
+    <div class="container">
+        <!-- About me -->
+        <div class="py-3">
+            <div>
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="text-justify">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non vulputate urna, eu finibus urna. Fusce volutpat quis nunc a pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce imperdiet diam quis urna iaculis feugiat. Aenean orci eros, bibendum faucibus erat sit amet, interdum dictum ante. Nullam blandit turpis in dolor condimentum auctor. Sed pretium, urna eget viverra tincidunt, elit ex tincidunt magna, vitae molestie odio est vitae nisl.
+                </p>
+                <p>
+                    Vivamus porta ornare felis, nec faucibus elit eleifend at. Praesent nisl urna, ornare quis euismod sed, luctus egestas lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque congue id augue id lacinia. Fusce finibus neque at cursus dignissim. Maecenas purus magna, fringilla id velit eu, accumsan dignissim ante. Vestibulum pharetra sollicitudin tellus, in pharetra nulla sodales vitae. Curabitur pellentesque suscipit erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                </p>
+            </div>
+        </div>
+        <!-- . About me -->
+
+        <!-- Subjects -->
+        <div class="py-3">
+            <h2>Cursando Actualmente</h2>
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <td>Nombre del Módulo</td>
+                        <td>Horas Semanales</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desarrollo Web Entorno Servidor</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo Web Entorno Cliente</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de Interfaces Web</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Empresa e Iniciativa Emprendedora</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Desallorro de Aplicaciones Web</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Horas de Libre Configuración</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- . Subjects -->
+
+        <!-- Projects -->
+        <div class="py-3">
+            <div>
+                <h2 id="proyectos">Projectos</h2>
+            </div>
+            <div class="text-left">
+                <ul class="list-links mt-3">
+                    <li><a href="REPASO_CSS/EJ_1/ej_1.html">Ejercicio 1</a></li>
+                    <li><a href="REPASO_CSS/EJ_2/ej_2.html">Ejercicio 2</a></li>
+                    <li><a href="REPASO_CSS/EJ_3/ej_3.html">Ejercicio 3</a></li>
+                    <li><a href="REPASO_CSS/EJ_4/ej_4.html">Ejercicio 4</a></li>
+                    <li><a href="REPASO_CSS/EJ_5/ej_5.html">Ejercicio 5</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- . Projects -->
+
+    </div>
+    <!-- . Container -->
+
+    <!-- Footer -->
+    <footer id="contacto" class="pa-3">
+        <div class="text-bold" style="padding: 6px;">2020 &copy; Claudia Borrachero</div>
+        <div class="text-right text-bold" style="padding: 6px;">Desarrollo de Interfaces Web</div>
+        <div class="text-normal text-lowercase pa-1">alum.cnereaborrachero@iesalixar.org</div>
+        <div class="text-right pa-1">+34 608 77 69 80</div>
+    </footer>
+    <!-- . Footer -->
+</body>
+</html>
