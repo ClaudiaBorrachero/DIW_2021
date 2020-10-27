@@ -1,27 +1,13 @@
-li:first-child {
-    color: blue;
-    font-size: small;
-}
+#galeria {
+    max-width: 650px;
+  }
+  #galeria img {
+    float: left;
+    margin: 1em;
+    padding: .5em;
+    border: 1px solid #CCC;
+  }
 
-li:nth-last-child(4) {
-    color: black;
-    font-size: small;
-}
-
-li:nth-last-child(3) {
-    color: black;
-    font-size: medium;
-}
-
-li:nth-last-child(2) {
-    color: black;
-    font-size: large;
-}
-
-li:last-child {
-    color: blue;
-    font-size: larger;
-}
 
 /***********************
 * Desarrollador: Claudia Borrachero Mallofret 
