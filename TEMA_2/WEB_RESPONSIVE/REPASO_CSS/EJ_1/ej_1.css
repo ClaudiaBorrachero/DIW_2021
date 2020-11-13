@@ -1,0 +1,369 @@
+li:first-child {
+    color: blue;
+    font-size: small;
+}
+
+li:nth-last-child(4) {
+    color: black;
+    font-size: small;
+}
+
+li:nth-last-child(3) {
+    color: black;
+    font-size: medium;
+}
+
+li:nth-last-child(2) {
+    color: black;
+    font-size: large;
+}
+
+li:last-child {
+    color: blue;
+    font-size: larger;
+}
+
+/***********************
+* Desarrollador: Claudia Borrachero Mallofret 
+* Version: 0.0.1
+*
+***********************/
+/**********************
+* Estructura hoja de estilo
+* 
+* 0. Variables
+* 1. Body
+* 2. Header
+* 3. Footer
+* 4. Textos
+* 5. Enlaces
+* 6. Imágenes
+* 7. Fondos
+* 8. Margins
+* 9. Paddings
+* 10. Tables
+*
+*  /Futura mejora: Responsive /
+* 
+**********************/
+/**********************
+* 0. Variables
+**********************/
+:root {
+    --primary:  #3E4FBB;
+    --secondary: #CFDD01;
+    --light: #cac8c8;
+    --dark: #242424;
+    --default: #131212;
+    --white: #FFFFFF;
+
+    --font-small: 11px;
+    --font-1: 13px;
+    --font-2: 16px;
+    --font-3: 20px;
+
+    --size-1: 6px;
+    --size-2: 12px;
+    --size-3: 24px;
+    --size-4: 48px;
+    --size-5: 96px;
+}
+
+/**********************
+* 1. Body
+**********************/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url("../../img/fondo.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: var(--font-1);
+    margin: 0 auto;
+    color: var(--default);
+}
+.container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1300px;
+    height: auto;
+}
+p {
+    color: var(--default);
+}
+
+/* Líneas horizontales */
+hr {
+    border-width: 1px;
+    border-style: solid;
+    width: 85%;
+    max-width: 300px;
+}
+hr, hr.hr-primary {
+    border-color: var(--primary);
+}
+hr.hr-secondary {
+    border-color: var(--secondary);
+}
+
+/**********************
+* 2. Header
+**********************/
+header {
+    width: 100%;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+header > nav > a {
+    display: inline-block;
+    padding: 15px 25px;
+    color: var(--light);
+    font-size: var(--font-1);
+}
+    header > nav > a:hover {
+        color: var(--primary);
+        background-color: var(--secondary);
+    }
+
+/**********************
+* 3. Footer
+**********************/
+footer {
+    width: 100%;
+    background-color: var(--secondary);
+    cursor: default;
+}
+    footer > div {
+        display: inline-block;
+        width: calc(50% - 10px);
+    }
+
+/**********************
+* 4. Textos
+**********************/
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    text-transform: uppercase;
+    cursor: default;
+    font-family: 'Mada', sans-serif;
+}
+h2 {
+    padding-left: var(--size-2);
+    border-left: 3px solid var(--secondary);
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-light { color: var(--light); }
+.text-dark { color: var(--dark); }
+
+.text-normal { font-weight: normal; }
+.text-bold { font-weight: bold; }
+.text-bolder { font-weight: bolder; }
+
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+
+/**********************
+* 5. Enlaces
+**********************/
+a {
+    text-decoration: none;
+}
+ul.list-links {
+    padding-inline-start: 0px;
+}
+ul.list-links > li {
+    display: inline-block;
+}
+    ul.list-links > li > a {
+        background-color: var(--primary);
+        color: var(--light);
+        padding: var(--size-2) var(--size-2);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+    ul.list-links > li > a:hover {
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
+
+/**********************
+* 6. Imágenes
+**********************/
+.img-user {
+    background-color: var(--light);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+/**********************
+* 7. Fondos
+**********************/
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-light { background-color: var(--light); }
+.bg-dark { background-color: var(--dark); }
+
+/**********************
+* 8. Márgenes
+**********************/
+.ma-1 { margin: var(--size-1); }
+.ma-2 { margin: var(--size-2); }
+.ma-3 { margin: var(--size-3); }
+.ma-4 { margin: var(--size-4); }
+.ma-5 { margin: var(--size-5); }
+
+.mx-1 { margin-left: var(--size-1); margin-right: var(--size-1); }
+.mx-2 { margin-left: var(--size-2); margin-right: var(--size-2); }
+.mx-3 { margin-left: var(--size-3); margin-right: var(--size-3); }
+.mx-4 { margin-left: var(--size-4); margin-right: var(--size-4); }
+.mx-5 { margin-left: var(--size-5); margin-right: var(--size-5); }
+
+.my-1 { margin-top: var(--size-1); margin-bottom: var(--size-1); }
+.my-2 { margin-top: var(--size-2); margin-bottom: var(--size-2); }
+.my-3 { margin-top: var(--size-3); margin-bottom: var(--size-3); }
+.my-4 { margin-top: var(--size-4); margin-bottom: var(--size-4); }
+.my-5 { margin-top: var(--size-5); margin-bottom: var(--size-5); }
+
+.mt-1 { margin-top: var(--size-1); }
+.mt-2 { margin-top: var(--size-2); }
+.mt-3 { margin-top: var(--size-3); }
+.mt-4 { margin-top: var(--size-4); }
+.mt-5 { margin-top: var(--size-5); }
+
+.mb-1 { margin-bottom: var(--size-1); }
+.mb-2 { margin-bottom: var(--size-2); }
+.mb-3 { margin-bottom: var(--size-3); }
+.mb-4 { margin-bottom: var(--size-4); }
+.mb-5 { margin-bottom: var(--size-5); }
+
+.ml-1 { margin-left: var(--size-1); }
+.ml-2 { margin-left: var(--size-2); }
+.ml-3 { margin-left: var(--size-3); }
+.ml-4 { margin-left: var(--size-4); }
+.ml-5 { margin-left: var(--size-5); }
+
+.mr-1 { margin-right: var(--size-1); }
+.mr-2 { margin-right: var(--size-2); }
+.mr-3 { margin-right: var(--size-3); }
+.mr-4 { margin-right: var(--size-4); }
+.mr-5 { margin-right: var(--size-5); }
+
+/**********************
+* 9. Paddings
+**********************/
+.pa-1 { padding: var(--size-1); }
+.pa-2 { padding: var(--size-2); }
+.pa-3 { padding: var(--size-3); }
+.pa-4 { padding: var(--size-4); }
+.pa-5 { padding: var(--size-5); }
+
+.px-1 { padding-left: var(--size-1); padding-right: var(--size-1); }
+.px-2 { padding-left: var(--size-2); padding-right: var(--size-2); }
+.px-3 { padding-left: var(--size-3); padding-right: var(--size-3); }
+.px-4 { padding-left: var(--size-4); padding-right: var(--size-4); }
+.px-5 { padding-left: var(--size-5); padding-right: var(--size-5); }
+
+.py-1 { padding-top: var(--size-1); padding-bottom: var(--size-1); }
+.py-2 { padding-top: var(--size-2); padding-bottom: var(--size-2); }
+.py-3 { padding-top: var(--size-3); padding-bottom: var(--size-3); }
+.py-4 { padding-top: var(--size-4); padding-bottom: var(--size-4); }
+.py-5 { padding-top: var(--size-5); padding-bottom: var(--size-5); }
+
+.pt-1 { padding-top: var(--size-1); }
+.pt-2 { padding-top: var(--size-2); }
+.pt-3 { padding-top: var(--size-3); }
+.pt-4 { padding-top: var(--size-4); }
+.pt-5 { padding-top: var(--size-5); }
+
+.pb-1 { padding-bottom: var(--size-1); }
+.pb-2 { padding-bottom: var(--size-2); }
+.pb-3 { padding-bottom: var(--size-3); }
+.pb-4 { padding-bottom: var(--size-4); }
+.pb-5 { padding-bottom: var(--size-5); }
+
+.pl-1 { padding-left: var(--size-1); }
+.pl-2 { padding-left: var(--size-2); }
+.pl-3 { padding-left: var(--size-3); }
+.pl-4 { padding-left: var(--size-4); }
+.pl-5 { padding-left: var(--size-5); }
+
+.pr-1 { padding-right: var(--size-1); }
+.pr-2 { padding-right: var(--size-2); }
+.pr-3 { padding-right: var(--size-3); }
+.pr-4 { padding-right: var(--size-4); }
+.pr-5 { padding-right: var(--size-5); }
+
+/**********************
+* 10. Tables
+**********************/
+.table {
+    width: 100%;
+}   
+.table > thead {
+    text-transform: uppercase;
+    text-align: center;
+}
+.table tr > td {
+    padding: 5px 15px;
+}
+    /* Table primary */
+    .table.table-primary > thead {
+        background-color: var(--primary);
+        color: var(--light);
+    }
+    /* Filas impares y celdas impares */
+    /* Filas pares y celdas pares */
+    .table.table-primary > tbody > tr:nth-child(odd) > td:nth-child(odd),
+    .table.table-primary > tbody > tr:nth-child(even) > td:nth-child(even) {
+        background-color: var(--light);
+    }
+    /* Filas impares y celdas pares */
+    /* Filas pares y celdas impares */
+    .table.table-primary > tbody > tr:nth-child(odd) > td:nth-child(even),
+    .table.table-primary > tbody > tr:nth-child(even) > td:nth-child(odd) {
+        background-color: var(--white);
+    }
+
+    /* Table secondary */
+    .table.table-secondary > thead {
+        background-color: var(--secondary);
+    }
+    .table.table.table-secondary > tbody > tr:nth-child(odd) {
+        background-color: var(--light);
+    }
+    .table.table.table-secondary > tbody > tr:nth-child(even) {
+        background-color: var(--white);
+    }
+
+/**********************
+* Futura mejora. Responsive
+**********************/
+@media (min-width: 720px) {
+}
+
+@media (min-width: 960px) {
+}
+
+@media (min-width: 1140px) {
+}
