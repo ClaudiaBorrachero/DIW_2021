@@ -18,7 +18,7 @@
 * 9. Paddings
 * 10. Tables
 *
-*  /Futura mejora: Responsive /
+* 
 * 
 **********************/
 /**********************
@@ -135,7 +135,20 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     padding-left: var(--size-2);
     border-left: 3px solid var(--secondary);
-}
+    position: relative;
+    animation-duration: 4s;
+    animation-name: mover;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    }
+    
+    @keyframes mover{
+        0%   {left:0px; top:0px;}
+        25%  {left:10px; top:0px;}
+        50%  {left:10px; top:10px;}
+        75%  {left:0px; top:10px;}
+        100% {left:0px; top:0px;}
+    }
 
 .text-center { text-align: center; }
 .text-left { text-align: left; }
@@ -180,6 +193,13 @@ ul.list-links > li {
         background-color: var(--secondary);
         color: var(--primary);
     }
+    ul.list-links > li:hover{
+        transform:scaleX(1.1);
+        -webkit-transform:scaleX(1.1);
+        -moz-transform:scaleX(1.1);
+        -ms-transform:scaleX(1.1);
+        -o-transform:scaleX(1.1);
+}
 
 /**********************
 * 6. Imágenes
@@ -193,6 +213,11 @@ ul.list-links > li {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+    transition: width 2s, height 4s;
+}
+.img-user:hover{
+    width: 250px;
+    height: 250px;    
 }
 
 /**********************
@@ -354,7 +379,7 @@ ul.list-links > li {
 * 11. Flex
 * 12. Slider
 *
-*  /Futura mejora: Responsive /
+* 
 * 
 **********************/
 /**********************
@@ -473,6 +498,19 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     padding-left: var(--size-2);
     border-left: 3px solid var(--primary);
+    position: relative;
+    animation-duration: 4s;
+    animation-name: mover;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes mover{
+    0%   {left:0px; top:0px;}
+    25%  {left:10px; top:0px;}
+    50%  {left:10px; top:10px;}
+    75%  {left:0px; top:10px;}
+    100% {left:0px; top:0px;}
 }
 
 .text-center { text-align: center; }
@@ -503,7 +541,7 @@ ul.list-links {
     padding-inline-start: 0px;
 }
 ul.list-links > li {
-    display: inline-block;
+    display: inline-block; 
 }
     ul.list-links > li > a {
         background-color: var(--primary);
@@ -514,11 +552,18 @@ ul.list-links > li {
         -moz-border-radius: 6px;
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
-    }
+}
     ul.list-links > li > a:hover {
         background-color: var(--secondary);
         color: var(--primary);
-    }
+}
+    ul.list-links > li:hover{
+        transform:scaleX(1.1);
+        -webkit-transform:scaleX(1.1);
+        -moz-transform:scaleX(1.1);
+        -ms-transform:scaleX(1.1);
+        -o-transform:scaleX(1.1);
+}
 
 /**********************
 * 6. Imágenes
@@ -533,6 +578,11 @@ ul.list-links > li {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+    transition: width 2s, height 4s;
+}
+.img-user:hover{
+    width: 250px;
+    height: 250px;    
 }
 
 /**********************
@@ -706,7 +756,7 @@ ul.list-links > li {
 .slider > ul {
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 700%;
     
     animation: cambio 20s infinite alternate linear;
 }
@@ -724,14 +774,14 @@ ul.list-links > li {
     0% {margin-left: 0;}
     20% {margin-left: 0;}
     
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    25% {margin-left: -200%;}
+    45% {margin-left: -200%;}
     
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    50% {margin-left: -300%;}
+    70% {margin-left: -300%;}
     
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+    75% {margin-left: -600%;}
+    100% {margin-left: -600%;}
 }
 }
 
@@ -754,7 +804,7 @@ ul.list-links > li {
 * 11. Grid
 * 12. Slider
 *
-*  /Futura mejora: Responsive /
+* 
 * 
 **********************/
 /**********************
@@ -840,7 +890,7 @@ ul.list-links > li {
         header > nav > a:hover {
             color: var(--primary);
             background-color: var(--secondary);
-        }
+}
     
 /**********************
 * 3. Footer
@@ -868,6 +918,19 @@ ul.list-links > li {
     h2 {
         padding-left: var(--size-2);
         border-left: 3px solid var(--secondary);
+        position: relative;
+        animation-duration: 4s;
+        animation-name: mover;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes mover{
+        0%   {left:0px; top:0px;}
+        25%  {left:10px; top:0px;}
+        50%  {left:10px; top:10px;}
+        75%  {left:0px; top:10px;}
+        100% {left:0px; top:0px;}
     }
     
     .text-center { text-align: center; }
@@ -908,12 +971,19 @@ ul.list-links > li {
             -moz-border-radius: 6px;
             -ms-border-radius: 6px;
             -o-border-radius: 6px;
-        }
+}
         ul.list-links > li > a:hover {
             background-color: var(--secondary);
             color: var(--primary);
         }
-    
+        ul.list-links > li:hover{
+            transform:scaleX(1.1);
+            -webkit-transform:scaleX(1.1);
+            -moz-transform:scaleX(1.1);
+            -ms-transform:scaleX(1.1);
+            -o-transform:scaleX(1.1);
+    }
+
 /**********************
 * 6. Imágenes
 **********************/
@@ -926,8 +996,13 @@ ul.list-links > li {
         -moz-border-radius: 100px;
         -ms-border-radius: 100px;
         -o-border-radius: 100px;
+        transition: width 2s, height 4s;
     }
-    
+    .img-user:hover{
+        width: 250px;
+        height: 250px;    
+    }
+
 /**********************
 * 7. Fondos
 **********************/
