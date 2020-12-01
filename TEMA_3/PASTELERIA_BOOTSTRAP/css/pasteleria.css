@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f8f7f2;
+}
+p{
+    text-align: justify;
+}
+a{
+    color: hotpink;
+}
+a:hover{
+    color: #9c7160;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+h5{
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pc,.md,.fotos{
+    display: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #9c7160;
+    position: relative;
+}
+.topnav #myLinks {
+    display: none;
+}
+.topnav a {
+    color: #f8f7f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+#myLinks>a{
+    background-color: #f8f7f2;
+    color: #9c7160;
+}
+#myLinks>a:hover{
+    background-color: rgb(185, 185, 117);
+    color: #f8f7f2;
+}
+.topnav a.icon {
+    background: #9c7160;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav a:hover {
+    background-color: #9c7160;
+    color: #f8f7f2;
+}
+.active {
+    background-color: #9c7160;
+    color: #f8f7f2;
+}
+.sociales>div{
+    width: 33%;
+}
+.sociales>div>a>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(185, 185, 117);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.card>img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+.card{
+    background-color: #9c716025;
+    border: #9c716025;
+}
+.card-body{
+    color: #9c7160;
+}  
+
+@media (min-width: 768px){
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: #f8f7f2;
+    }
+    p{
+        text-align: justify;
+    }
+    a{
+        color: hotpink;
+    }
+    a:hover{
+        color: #9c7160;
+    }
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+    h5{
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .title:hover,.title{
+        color: #9c7160;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    nav{
+        box-shadow: 2px 2px 2px 1px rgb(185, 185, 117);
+    }
+    nav>a:hover{
+        color: white;
+        background-color: rgb(185, 185, 117);
+    }
+    .pc,.sm,.fotos{
+        display: none;
+    }
+    .md{
+        display: block;
+    }
+    .sociales>div>a>img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(185, 185, 117);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }        
+    .card>img{
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .card{
+        background-color: #9c716025;
+        border: #9c716025;
+    }
+    .card-body{
+        color: #9c7160;
+    }
+}
+
+@media (min-width: 992px) { 
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: #f8f7f2;
+    }
+    p{
+        text-align: justify;
+    }
+    a{
+        color: hotpink;
+    }
+    a:hover{
+        color: #9c7160;
+    }
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+    h5{
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .title:hover,.title{
+        color: #9c7160;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    nav{
+        box-shadow: 2px 2px 2px 1px rgb(185, 185, 117);
+    }
+    nav>a:hover{
+        color: white;
+        background-color: rgb(185, 185, 117);
+    }
+    .subnav>a:hover{
+        color: rgb(185, 185, 117);
+    }
+    .md,.sm,.menubottom{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    .sociales>div>a>img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(185, 185, 117);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .card>img{
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .card{
+        background-color: #9c716025;
+        border: #9c716025;
+    }
+    .card-body{
+        color: #9c7160;
+    }
+    .fotos{
+        display: block;
+    }
+ }

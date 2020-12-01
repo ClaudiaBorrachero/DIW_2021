@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caramel et Chocolat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pasteleria.css">
+  <link rel="icon" href="img/logo.png"type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    $(function () {
+    $('[data-toggle="popover"]').popover()
+    })
+  </script>
+</head>
+<body ondragstart="return false;">
+  <!-- Cabecera Sm -->
+  <header class="sm">
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" class="active">Caramel et Chocolat</a>
+      <div id="myLinks">
+        <a href="#novedades" class="nav-link">Novedades</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#quien" class="nav-link">Quienes Somos</a>
+        <a href="#carouselExampleIndicators" class="nav-link">Galería</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+    </div>
+  </header>
+  <!-- . Cabecera Sm -->
+
+  <!-- Cabecera Md -->
+  <header class="md">
+    <div class="p-3 d-flex">
+      <a href="index.html" class="navbar-brand"><h1 class="title">Caramel et Chocolat</h1></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="#novedades" class="nav-link">Novedades</a>
+      <a href="#testimonios" class="nav-link">Testimonios</a>
+      <a href="#quien" class="nav-link">Quienes Somos</a>
+      <a href="#carouselExampleIndicators" class="nav-link">Galería</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+  <!-- . Cabecera Md -->
+
+  <!-- Cabecera Lg -->
+  <header class="pc">
+    <div class="d-flex nav2">
+      <div class="p-3 flex-grow-1">
+        <a href="index.html" class="navbar-brand"><h1 class="title">Caramel et Chocolat</h1></a>
+      </div>
+      <div class="d-flex p-4 subnav">
+        <img src="img/iconfinder_Food_728941.svg" style="width: 15px; height: 15px;" alt="" class="mt-2">
+        <a href="https://drive.google.com/file/d/1_1lBVvrabMUL5o6KSugp7jtgOiMiIWUx/view" target="_blank" class="p-2">
+          <h6>Ver Menú</h6></a>
+        <svg class="mt-2" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-inbound" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+        <a href="tel:+34605806928" class="p-2"><h6>Llamar Ahora</h6></a>
+        <svg class="mt-2" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        <a href="https://www.google.com/maps/dir//Caramel+et+Chocolat/data=!4m8!4m7!1m0!1m5!1m1!1s0xd121390eb4e3fab:0x4c63e7681c5f62ee!2m2!1d-6.122243999999999!2d37.380869" target="_blank" class="p-2"><h6>Cómo Llegar</h6></a>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="#novedades" class="nav-link">Novedades</a>
+      <a href="#testimonios" class="nav-link">Testimonios</a>
+      <a href="#quien" class="nav-link">Quienes Somos</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+  <!-- . Cabecera Lg -->
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Presentación -->
+    <div class="p-3 mt-4 row">
+      <img src="img/cabecera.jpg" alt="title" class="col-sm-12 col-md-12 col-lg-12 img-fluid">
+      <a target="_blank" class="btn p-2 col-sm-12 col-md-12 col-lg-12 mt-3" role="button" style="background-color: rgb(185, 185, 117);color:white; border-top: 2px solid rgb(185, 185, 117);" href="https://drive.google.com/file/d/1_1lBVvrabMUL5o6KSugp7jtgOiMiIWUx/view">Ver menú</a>
+    </div>
+    <!-- . Presentación -->
+
+    <!-- Novedades -->
+    <div class="mt-4" id="novedades">
+      <hr>
+      <h5>NOVEDADES</h5>
+      <div class="row d-flex">
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <a href="">Fecha de publicación: 24-nov-2020</a>
+            <p>Actualizamos nuestro horario de las tardes!
+              de 16:30 a 18:00h como de costumbre tendremos nuestro servicio de cafetería y pastelería habitual
+              de 18:00 a 20:00h... TAKE AWAY! toda nuestra pastelería, bollería y crepes recién hechas preparadas 
+              para ti al momento para llevarte a casa y poder seguir goloseando!! También café e infusiones para llevar!!! 
+              Aceptamos encargos telefónicos para recoger en local, o sobre la marcha pidenos lo que quieras!</p>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div> 
+            <a href="">Fecha de publicación: 24-nov-2020</a>
+            <p>El horario se ha actualizado</p>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <a href="">Fecha de publicación: 08-nov-2020</a>
+            <p>El horario se ha actualizado</p>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <a href=""> Fecha de publicación: 25-oct-2020</a>
+            <p>El horario se ha actualizado</p>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div> 
+            <a href="">Fecha de publicación: 01-sep-2020</a>
+            <p>El horario se ha actualizado</p>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <a href="">Fecha de publicación: 19-sep-2020</a>
+            <p>Volvemos a la temporada de la pastelería francesa hecha a diario en nuestro obrador! 
+              10 minutos abiertos... y ya hay algún goloso que casi nos vacía la vitrina!</p>
+          </div>
+        </article> 
+      </div>  
+      <div class="row mt-4">
+        <a target="_blank" class="btn p-2 col-sm-12 col-md-4 col-lg-4" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);" href="https://www.google.es/search?q=Caramel+et+Chocolat&ludocid=5504497603915506414&lpsid=35737515457981983&source=sh/x/localposts&lsig=AB86z5V_LcQH77zrSqnnkoqRCHKu">Ver todas</a>
+        <a target="_blank" class="btn p-2 col-sm-12 col-md-4 col-lg-4" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);" href="compra.html">Orden online</a>
+        <a target="_blank" class="btn p-2 col-sm-12 col-md-4 col-lg-4" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);" href="tel:+34605806928">LLamar ahora</a>
+      </div>
+    </div>
+    <!-- . Novedades -->
+
+    <!-- Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-4 fotos" data-ride="carousel">
+      <hr>
+      <h5>IMÁGENES</h5>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner" style="height: 350px;">
+        <div class="carousel-item active">
+          <img src="img/1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/6.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/7.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/8.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/9.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- . Slider -->
+
+    <!-- Testimonios -->
+    <div id="testimonios mt-4" class="mt-4">
+      <hr>
+      <h5>TESTIMONIOS</h5>
+      <div class="row">
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div class="d-flex">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <p class="ml-4">Hace 2 semanas</p>
+            <svg  class="ml-5" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+          </div>
+          <div class="media">
+            <img src="img/m1.png" alt="" style="width:50; height: 50px;" class="p-1">
+            <div class="media-body">
+              <h6 style="color: hotpink;">- Fco J</h6>
+              <p>"Un sitio agradable con el servicio muy correcto y con productos de calidad soy de fuera y me ha encantado el trato y 
+                su buen gusto en todo los detalles lo recomiendo"</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div class="d-flex">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <p class="ml-4">Hace tres semanas</p>
+            <svg class="ml-5" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+          </div>
+          <div class="media">
+            <img src="img/w2.png" alt="" style="width:50; height: 50px;" class="p-1">
+            <div class="media-body">
+              <h6 style="color: hotpink;">- Isabel G</h6>
+              <p>"Excelente calidad, servicio, limpieza y atención. Buena relación calidad-precio."</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div class="d-flex">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="orange" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <p class="ml-4">Hace un mes</p>
+            <svg  class="ml-5" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+          </div>
+          <div class="media">
+            <img src="img/m2.png" alt="" style="width:50; height: 50px;" class="p-1">
+            <div class="media-body">
+              <h6 style="color: hotpink;">- José R</h6>
+              <p>"Decisión improvisada, gracias a vuestros comentarios, y ha sido una elección espectacular para una merienda exquisita. Volveremos."</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="row mt-4">
+        <a target="_blank" class="btn p-2 col-sm-6 col-md-6 col-lg-6" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);" href="https://www.google.com/search?hl=es-ES&gl=es&q=Caramel+et+Chocolat,+bajo,+Calle+Padre+Claudio+Lopez,+14,+41807+Espartinas,+Sevilla&ludocid=5504497603915506414&lsig=AB86z5W5RXa7wfrVdAUnG1pfCFYA#lrd=0xd121390eb4e3fab:0x4c63e7681c5f62ee,3">Escribe un comentario</a>
+        <a target="_blank" class="btn p-2 col-sm-6 col-md-6 col-lg-6" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);" href="https://www.google.com/search?hl=es-ES&gl=es&q=Caramel+et+Chocolat,+bajo,+Calle+Padre+Claudio+Lopez,+14,+41807+Espartinas,+Sevilla&ludocid=5504497603915506414&lsig=AB86z5W5RXa7wfrVdAUnG1pfCFYA#lrd=0xd121390eb4e3fab:0x4c63e7681c5f62ee,1">Ver más</a>
+      </div>
+    </div>
+    <!-- . Testimonios -->
+
+    <!-- Fotos Card -->
+    <div class="mt-4" style="text-align: center;" id="galeria">
+      <hr>
+      <h5>GALERÍA</h5>
+      <div class="row">
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-3">
+          <img src="img/1.png" alt="" class="img-fluid" data-toggle="popover" title="Ingredientes" data-content="Masa, chocolate...">
+          <div class="card-body"><h6>Croissant con nutella</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-3">
+          <img src="img/2.png" alt="" class="img-fluid" data-toggle="popover" title="Cambio horario" data-content="Nuevo horario">
+          <div class="card-body"><h6>Cambiamos el horario</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-3">
+          <img src="img/3.png" alt="" class="img-fluid" data-toggle="popover" title="Ingredientes" data-content="Pan, aceite, jamón...">
+          <div class="card-body"><h6>Tostadas para desayunar</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-3">
+          <img src="img/4.jpg" alt="" class="img-fluid" data-toggle="popover" title="Ingredientes" data-content="Masa, limón...">
+          <div class="card-body"><h6>Tartaleta de limón y merengue</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-3">
+          <img src="img/5.jpg" alt="" class="img-fluid" data-toggle="popover" title="Ingredientes" data-content="Masa, limón...">
+          <div class="card-body"><h6>Tartaleta de limón y merengue</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-3">
+          <img src="img/6.png" alt="" class="img-fluid" data-toggle="popover" title="Ingredientes" data-content="Hojaldre, frutas...">
+          <div class="card-body"><h6>Hojaldre de frutas</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-4">
+          <img src="img/7.png" alt="" class="img-fluid" data-toggle="popover" title="Lugar" data-content="Interior">
+          <div class="card-body"><h6>Interior del lugar</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-4">
+          <img src="img/8.jpeg" alt="" class="img-fluid" data-toggle="popover" title="Ingredientes" data-content="Masa, chocolate...">
+          <div class="card-body"><h6>Pan au chocolat</h6></div>
+        </div>
+        <div class="card col-sm-12 col-md-6 col-lg-4 p-4">
+          <img src="img/9.png" alt="" class="img-fluid" data-toggle="popover" title="Lugar" data-content="Interior">
+          <div class="card-body"><h6>Interior del lugar</h6></div>
+        </div>
+      </div>
+    </div>
+    <!-- . Fotos Card -->
+
+    <!-- Quienes Somos -->
+    <div class="mt-4 p-5" style="background-color: rgba(185, 185, 117, 0.288);" id="quien">
+      <h5>CAFETERÍA-PASTELERÍA CON OBRADOR PROPIO</h5>
+      <p class="p-5">Pastelería francesa hecha a diario en nuestro propio obrador con ingredientes naturales, desayunos con pan confeccionado y horneado a diario en nuestros hornos, zumo de naranja natural recién exprimido, café, más de 15 variedades de tés e infusiones, y para las meriendas... crepes recién hechas!
+        <br><br>
+        Todo esto en el mejor ambiente para que disfrutes de nuestros productos compartiendo con los tuyos tus momentos más dulces
+        <br><br>
+        No te olvides de dejar tu valoración y comentario en el muro! Es muy importante para nosotros! Muchas gracias y esperamos compartir contigo todos esos grandes momentos! </p>
+    </div>
+    <!-- . Quienes Somos -->
+
+    <!-- Contacto -->
+    <div class="mt-4 mb-5" id="contacto">
+      <hr>
+      <h5>CONTACTO</h5>
+      <div class="row">
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <h6 style="color: hotpink;">Contacto</h6>
+            <h6>605 80 69 28</h6>
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <h6 style="color: hotpink;">Horario de apertura</h6>
+            <img src="img/Horario.jpg" class="img-fluid" alt="horario">
+          </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-4">
+          <div>
+            <h6 style="color: hotpink;">Dirección</h6>
+            <h6>Calle Padre Claudio Lopez, 14 <br> 
+              41807 Espartinas <br>
+              Sevilla España</h6>
+          </div>
+        </article>
+      </div>
+      <div class="row mt-4">
+        <a href="tel:+34605806928" class="btn col-sm-12 col-md-6 col-lg-6" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);">LLAMAR AHORA</a>
+        <a href="https://www.google.com/maps/dir//Caramel+et+Chocolat/data=!4m8!4m7!1m0!1m5!1m1!1s0xd121390eb4e3fab:0x4c63e7681c5f62ee!2m2!1d-6.122243999999999!2d37.380869" target="_blank" class="btn col-sm-12 col-md-6 col-lg-6" role="button" style="color: rgb(185, 185, 117); border-bottom: 2px solid rgb(185, 185, 117);">CÓMO LLEGAR</a>
+      </div>
+      <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.37809126319!2d-6.124451184693675!3d37.38088987983312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd121390eb4e3fab%3A0x4c63e7681c5f62ee!2sCaramel%20et%20Chocolat!5e0!3m2!1ses!2ses!4v1606594269367!5m2!1ses!2ses" 
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- . Contacto -->
+
+    <!-- Footer -->
+    <hr>
+    <footer class="mt-4">
+      <div class="row d-flex p-4 sociales">
+        <div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://www.facebook.com/carameletchocolatespartinas/"><img src="img/iconfinder_icon-social-facebook_211902.svg" alt=""></a></div>
+        <div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://www.instagram.com/caramel.et.chocolat/"><img src="img/iconfinder_Instagram_3709561.svg" alt=""></a></div>
+        <div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="mailto:carameletchocolatsl@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><img src="img/iconfinder_147_Gmail_logo_logos_4394271.svg" alt=""></a></div>
+      </div>
+      <div class="row d-flex">
+        <div class="flex-grow-1" style="padding: 6px; color: #9c7160">2020 &copy; Caramel et Chocolat</div>
+        <div><a href="https://support.google.com/business/answer/7388122" style="color: #9c7160;">Denunciar uso inadecuado</a></div>
+      </div>
+    </footer>
+    <!-- . Footer -->
+
+    <!-- Fixed bottom -->
+    <div class="menubottom fixed-bottom position-sticky mt-5" style="background-color: #f8f7f2;">
+      <div class="d-flex p-4 subnav2 row">
+        <div class="d-flex text-center col-sm-3 col-md-3">
+          <img src="img/iconfinder_Food_728941.svg" style="width: 15px; height: 15px;" alt="" class="mt-2">
+          <a href="https://drive.google.com/file/d/1_1lBVvrabMUL5o6KSugp7jtgOiMiIWUx/view" target="_blank" class="p-2">
+          <h6>Ver Menú</h6></a>
+        </div>
+        <div class="d-flex text-center col-sm-3 col-md-3">
+          <svg class="mt-2" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-inbound" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          <a href="tel:+34605806928" class="p-2"><h6>Llamar Ahora</h6></a>
+        </div>
+        <div class="d-flex text-center col-sm-3 col-md-3">
+          <svg class="mt-2" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+          <a href="https://www.google.com/maps/dir//Caramel+et+Chocolat/data=!4m8!4m7!1m0!1m5!1m1!1s0xd121390eb4e3fab:0x4c63e7681c5f62ee!2m2!1d-6.122243999999999!2d37.380869" target="_blank" class="p-2">
+          <h6>Cómo Llegar</h6></a>
+        </div>
+        <div class="d-flex text-center col-sm-3 col-md-3">
+          <svg class="mt-2" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-shop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+          </svg>
+          <a href="compra.html" class="p-2"><h6>Orden Online</h6></a>
+        </div>
+      </div>
+    </div>
+    <!-- . Fixed bottom -->
+    
+  </div>
+  <!-- . Container -->
+</body>
+</html>

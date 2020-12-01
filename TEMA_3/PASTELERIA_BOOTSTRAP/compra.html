@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caramel et Chocolat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pasteleria.css">
+  <link rel="icon" href="img/logo.png"type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</head>
+<body ondragstart="return false;">
+
+  <!-- Cabecera Lg -->
+  <header>
+    <a href="index.html">
+      <h1 class="p-4" style="color: #9c7160; font-family: 'Times New Roman', Times, serif;">Caramel et Chocolat</h1>
+    </a>
+  </header>
+  <!-- . Cabecera Lg -->
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Presentación -->
+    <div class="row mb-4">
+      <img src="img/cabecera.jpg" alt="title" class="col-sm-12 col-md-12 col-lg-12 img-fluid">
+    </div>
+    <!-- . Presentación -->
+
+    <!-- Formulario -->
+    <form class="mb-5">
+      <div class="row">
+        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+          <label for="exampleFormControlInput1">Nombre</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu nombre..." required>
+          <div class="invalid-feedback">Introduce tu nombre</div>
+          <div class="valid-feedback">Muy bien</div>
+        </div>
+        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+          <label for="exampleFormControlInput1">Apellidos</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tus apellidos..." required>
+          <div class="invalid-feedback">Introduce tus apellidos</div>
+          <div class="valid-feedback">Muy bien</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Dirección</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Calle Padre Claudio Lopez, 14..." required>
+        <div class="invalid-feedback">Introduce un mail válido</div>
+        <div class="valid-feedback">Muy bien</div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+          <label for="inputCity">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+          <label for="inputState">Localidad</label>
+          <select id="inputState" class="form-control">
+            <option selected>Espartinas</option>
+            <option>Castilleja de la Cuesta</option>
+            <option>Salteras</option>
+            <option>Gines</option>
+            <option>Bormujos</option>
+            <option>Tomares</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+          <label for="inputZip">Código Postal</label>
+          <input type="text" class="form-control" id="inputZip">
+          <div class="invalid-feedback">Introduce un cd válido</div>
+          <div class="valid-feedback">Muy bien</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
+        <div class="invalid-feedback">Introduce un mail válido</div>
+        <div class="valid-feedback">Muy bien</div>
+      </div>
+
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Redordar datos</label>
+      </div><br>
+
+      <!-- Productos -->
+      <div class="row">
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <label for="exampleFormControlSelect1">Productos</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Hojaldre de manzana</label>
+          </div>
+        </div>
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <label for="exampleFormControlSelect1">Cantidad</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Croissant con nutella</label>
+          </div>
+        </div>
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Tartaleta de limón y merengue</label>
+          </div>
+        </div>
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Hojaldre de frutas</label>
+          </div>
+        </div>
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Pan au chocolat</label>
+          </div>
+        </div>
+        <div class="form-group col-sm-6 col-md-6 col-lg 6">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <!-- . Productos -->
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Instrucciones de entrega</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Adjunta un archivo</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Avísame sobre ofertas y/o promociones.</label>
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Acepto que usen mis datos para un estudio del mercado.</label>
+      </div>
+
+      <button type="submit" class="btn" style="background-color:rgb(185, 185, 117);">
+        <a href="index.html" style=" color: #f8f7f2;">Cancelar</a>
+      </button>
+
+      <button type="submit" class="btn" style="background-color:rgb(185, 185, 117); color: #f8f7f2;">
+        <a href="index.html" style=" color: #f8f7f2;">Confirmar</a>
+      </button>
+    </form>
+    <!-- . Formulario -->
+
+    <!-- Footer -->
+    <hr>
+    <footer class="mt-4">
+      <div class="row d-flex p-4 sociales">
+        <div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://www.facebook.com/carameletchocolatespartinas/"><img src="img/iconfinder_icon-social-facebook_211902.svg" alt=""></a></div>
+        <div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://www.instagram.com/caramel.et.chocolat/"><img src="img/iconfinder_Instagram_3709561.svg" alt=""></a></div>
+        <div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="mailto:carameletchocolatsl@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><img src="img/iconfinder_147_Gmail_logo_logos_4394271.svg" alt=""></a></div>
+      </div>
+      <div class="row d-flex">
+        <div class="flex-grow-1" style="padding: 6px; color: #9c7160">2020 &copy; Caramel et Chocolat</div>
+        <div><a href="https://support.google.com/business/answer/7388122" style="color: #9c7160;">Denunciar uso inadecuado</a></div>
+      </div>
+    </footer>
+    <!-- . Footer -->
+
+  </div>
+  <!-- . Container-->
+</body>
+</html>
