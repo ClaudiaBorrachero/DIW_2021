@@ -225,4 +225,7 @@ h4{
     .fotos{
         display: block;
     }
+    table>tbody>tr>td{
+        padding: 4px;
+    }
  }
