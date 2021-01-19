@@ -4,9 +4,462 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gines Autoescuela</title>
-    <link rel="stylesheet" href="css/gines.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/cocheLogo.png"type="image/png">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
-<body>
+<body ondragstart="return false;">
+    <!-- Cabecera Sm -->
+    <header class="cabeceraSm">
+        <div class="topnav">
+            <img src="img/perfil2.png" alt="">
+            <a href="gines.html" class="logoA"><img src="img/logo2.PNG" alt="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="myLinks">
+                <a href="#permisos">PERMISOS DE CONDUCIR</a>
+                <a href="#profesionales">PROFESIONALES</a>
+                <a href="#packs">NUESTROS PACKS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+        </div>
+        <div class="fotoSM">
+            <div style="padding: 10px;">
+                <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">INFÓRMATE SOBRE NUESTRA AUTOESCUELA</h3>
+                <a href="#contacto">TE LLAMAMOS GRATIS</a>
+            </div>
+        </div>
+    </header> 
+    <!-- . Cabecera Sm -->
+    <!-- Cabecera Md+Lg -->
+    <header class="cabeceraLg">
+        <div class="inicioCabecera">
+            <div>
+                <img src="img/cocheLogo.png" alt="" class="imgLogo" style="width: 50px; height: 50px; margin-top: 15px;margin-left: 10px;">
+                <img src="img/logo.PNG" alt="" class="imgLogo2">
+            </div>
+            <div class="menu2">
+                <div>
+                    <img src="img/info.png" alt="">
+                    <h4><a href="#info" style="color: #005377;">NUESTRA AUTOESCUELA</a></h4>
+                    <img src="img/phone.png" alt="">
+                    <h4><a href="tel:+95 471 31 12" style="color: #005377;">95 471 31 12</a></h4>
+                    <a href=""><img src="img/perfil.png" alt="" style="width: 50px; height: 50px;"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <div class="dropdown">
+                    <a href="#permisos" class="dropbtn">PERMISOS DE CONDUCIR</a>
+                    <div class="dropdown-content">
+                        <a href="coche.html">COCHE</a>
+                        <a href="moto.html">MOTO</a>
+                        <a href="camion.html">CAMIÓN</a>
+                        <a href="trailer.html">TRÁILER</a>
+                        <a href="autobus.html">AUTOBÚS</a>
+                        <a href="remolques.html">REMOLQUES</a>
+                        <a href="contacto.html">PRÁCTICAS ADICIONALES</a>
+                    </div>
+                </div>
+                
+                <a href="#profesionales">PROFESIONALES</a>
+                <a href="#packs">NUESTROS PACKS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </nav>
+        </div>
+        <div class="imgCabecera">
+            <h1 style="font-family: Ink Free;font-size: 80px;color: white; text-shadow: 5px 5px #005377">GINES AUTOESCUELA</h1>
+            <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">INFÓRMATE SOBRE NUESTRA AUTOESCUELA</h3>
+            <a href="#contacto">TE LLAMAMOS GRATIS</a>
+        </div>
+    </header>
+    <!-- . Cabecera Md+Lg -->
     
+    <!-- Container -->
+    <div class="container">
+        <!-- Información Sm -->
+        <div class="infoSM" id="infoSM">
+            <div class="info1SM">
+                <a href="#" class="tituloverdeSM"><h3>GINES AUTOESCUELA: </h3></a><h3>LA AUTOESCUELA A TU MEDIDA PARA APRENDER DE FORMA PERSONALIZADA Y CON PROFESORES EXPERTOS.</h3>
+                <p>Sólo en nuestra autoescuela podrás obtener tu carnet en 3 semanas y además de manera amena y divertida. Te ofrecemos 
+                    la oportunidad de obtener el teórico a través de nuestro método único de cursos intensivos de teoría, con los cuales, 
+                    tenemos un elevado porcentaje de aprobados. Nuestras modernas instalaciones, nuestro pedagógico y efectivo sistema de 
+                    cursos intensivos, te permitirán culminar con éxito, todo el proceso de obtención del carnet de conducir, que, en las 
+                    demás autoescuelas, se demora meses.</p>
+            </div>
+        </div>
+        <!-- . Información Sm-->
+        <!-- Información Md+Lg -->
+        <div class="info" id="info">
+            <div class="info1">
+                <a href="#" class="tituloverde"><h3>GINES AUTOESCUELA: </h3></a><h3>LA AUTOESCUELA A TU MEDIDA PARA APRENDER DE FORMA PERSONALIZADA Y CON PROFESORES EXPERTOS.</h3>
+                <p>Sólo en nuestra autoescuela podrás obtener tu carnet en 3 semanas y además de manera amena y divertida. Te ofrecemos 
+                    la oportunidad de obtener el teórico a través de nuestro método único de cursos intensivos de teoría, con los cuales, 
+                    tenemos un elevado porcentaje de aprobados. Nuestras modernas instalaciones, nuestro pedagógico y efectivo sistema de 
+                    cursos intensivos, te permitirán culminar con éxito, todo el proceso de obtención del carnet de conducir, que, en las 
+                    demás autoescuelas, se demora meses.</p>
+            </div>
+            <div class="info2"><img src="img/interior.jpg" alt=""></div>
+        </div>
+        <!-- . Información Md+Lg-->
+        <!-- Permisos de conducir -->
+        <div class="permisos" id="permisos">
+            <h1 style="text-align: center;">REALIZA TU MATRÍCULA ONLINE</h1><hr>
+            <div class="figures">
+                <figure><a href="coche.html"><img src="img/coche.png" alt=""></a></figure>
+                <figure><a href="moto.html"><img src="img/moto.png" alt=""></a></figure>
+                <figure><a href="autobus.html"><img src="img/autobus.png" alt=""></a></figure>
+                <figure><a href="camion.html"><img src="img/camion.png" alt=""></a></figure>
+                <figure><a href="trailer.html"><img src="img/trailer.png" alt=""></a></figure>
+                <figure><a href="remolque.html"><img src="img/remolque.png" alt=""></a></figure>
+            </div>
+        </div>
+        <!-- . Permisos de conducir -->
+        <!-- Nuestros Packs -->
+        <div class="packs" id="packs">
+            <article class="pack1">
+                <div>
+                    <h2>PACK PERMISO B</h2>
+                    <h1>450€</h1></div>
+                <ul>
+                    <li>MATRÍCULA</li>
+                    <li>TRÁMITES</li>
+                    <li>CURSO TEÓRICO (MATERIAL)</li>
+                    <li>1º EXAMEN TEÓRICO</li>
+                    <li>10 PRÁCTICAS</li>
+                    <li>TEST ONLINE</li>
+                    <li>Y LA L</li>
+                </ul>
+            </article>
+            <article class="pack2">
+                <div>
+                    <h2>PACK PERMISO A1</h2>
+                    <h1>400€</h1></div>
+                <ul>
+                    <li>MATRÍCULA</li>
+                    <li>TRÁMITES</li>
+                    <li>CURSO TEÓRICO (MATERIAL)</li>
+                    <li>1º EXAMEN MANIOBRAS</li>
+                    <li>1º EXAMEN CIRCULACIÓN</li>
+                    <li>2 PRÁCTICAS CIRCUITO CERRADO</li>
+                    <li>2 PRÁCTICAS CIRCULACIÓN</li>
+                    <li>TEST ONLINE</li>
+                    <li>Y LA L</li>
+                </ul>
+            </article>
+            <article class="pack3">
+                <div>
+                    <h2>PACK PERMISO A2</h2>
+                    <h1>350€</h1>
+                </div>
+                <ul>
+                    <li>MATRÍCULA</li>
+                    <li>TRÁMITES</li>
+                    <li>CURSO TEÓRICO (MATERIAL)</li>
+                    <li>1º EXAMEN TEÓRICO</li>
+                    <li>2 PRÁCTICAS CIRCUITO CERRADO</li>
+                    <li>2 PRÁCTICAS CIRCULACIÓN</li>
+                    <li>TEST ONLINE</li>
+                    <li>Y LA L</li>
+                </ul>
+            </article>
+        </div>
+        <!-- . Nuestros Packs -->
+        <!-- Localización -->
+        <div class="local">
+            <a href="https://www.google.com/maps/dir/37.3937603,-6.0846544/Gines+Autoescuela/@37.3908329,-6.0848528,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd12135ac1348f5d:0x74a20df4ebd3629a!2m2!1d-6.080187!2d37.3879055"><img src="img/iframe.PNG" alt=""></a>
+            <div>
+                <div><img src="img/gps.png" alt=""><h2>ENCUENTRA NUESTRA AUTOESCUELA</h2></div>
+                <h2>Colón, 15 <br> Gines (Sevilla) <br> 41960</h2>
+                <a href="https://www.google.com/maps/dir/37.3937603,-6.0846544/Gines+Autoescuela/@37.3908329,-6.0848528,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd12135ac1348f5d:0x74a20df4ebd3629a!2m2!1d-6.080187!2d37.3879055">CÓMO LLEGAR</a>
+            </div>
+        </div>
+        <!-- . Localización -->
+        <!-- Slider -->
+        <ul class="slider" id="slider">
+            <li id="slide1">
+              <img src="img/1.jpg"/>
+            </li>
+            <li id="slide2">
+              <img src="img/pistas.jpg"/>
+            </li>
+            <li id="slide3">
+              <img src="img/c4.jpg">
+            </li>
+          </ul>
+          
+          <ul class="menu">
+            <li>
+              <a href="#slide1">1</a>
+            </li>
+            <li>
+              <a href="#slide2">2</a>
+            </li>
+             <li>
+              <a href="#slide3">3</a>
+            </li>
+          </ul>
+        <!-- . Slider -->
+        <!-- Formulario Sm -->
+        <div class="formularioSM" id="contacto">
+            <h1>INFÓRMATE SIN COMPROMISO</h1><hr>
+            <h3>CONTACTA CON NOSOTROS, RELLENA EL FORMULARIO</h3>
+            <div>
+                <label for="nombre">NOMBRE*</label><br>
+                <input class="input" type="text" id="nombre" required placeholder="Pepito">
+            </div>
+            <div>
+                <label for="apellidos">APELLIDOS*</label><br>
+                <input class="input" type="text" id="apellidos" required placeholder="Suárez">
+            </div>
+            <div>
+                <label for="mail">EMAIL*</label><br>
+                <input class="input" type="text" id="mail" required placeholder="holaquetal@gmail.com">
+            </div>
+            <div>
+                <label for="tel">TELÉFONO*</label><br>
+                <input class="input" type="text" id="tel" required placeholder="680987654">
+            </div>
+            <div>
+                <label for="interes">EN QUÉ ESTÁS INTERESADO*</label><br>
+                <select name="interes" id="interes">
+                    <option value="coche">PERMISO COCHE</option>
+                    <option value="moto" selected>PERMISO MOTO</option>
+                    <option value="camion">PERMISO CAMIÓN</option>
+                    <option value="trailer">PERMISO TRÁILER</option>
+                    <option value="autobus">PERMISO AUTOBÚS</option>
+                    <option value="remolques">PERMISO REMOLQUES</option>
+                    <option value="otros">OTRO</option>
+                </select>
+            </div>
+            <div>
+                <label for="llamada">A QUÉ HORA TE LLAMAMOS*</label><br>
+                <select name="interes" id="interes">
+                    <option value="hora1">10:00 - 13:30</option>
+                    <option value="hora2">16:30 - 20:30</option>
+                    <option value="hora3" selected>LO ANTES POSIBLE</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">MENSAJE</label><br>
+                <textarea name="" id="" cols="40" rows="5"></textarea>
+            </div>
+            <div style="display: flex; flex-wrap: wrap;" class="opciones">
+                <input checked type="checkbox" id="terminos" name="terminos" value="terminos">
+                <h5 for="terminos"> Acepto los términos y condiciones</h5><br>
+                <input checked type="checkbox" id="ofertas" name="ofertas" value="ofertas">
+                <h5 for="ofertas"> Acepto recibir ofertas y promociones</h5><br>
+                <input type="checkbox" id="pruebaGratis" name="pruebaGratis" value="ofpruebaGratisertas">
+                <h5 for="pruebaGratis"> Quiero apuntarme a la Prueba Gratuita</h5><br>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </div>
+        <!-- . Formulario Sm -->
+        <!-- Formulario Md+Lg -->
+        <div class="formulario" id="contacto">
+            <h1>INFÓRMATE SIN COMPROMISO</h1><hr>
+            <h3>CONTACTA CON NOSOTROS, RELLENA EL FORMULARIO</h3>
+            <div>
+                <div>
+                    <label for="nombre">NOMBRE*</label><br>
+                    <input class="input" type="text" id="nombre" required placeholder="Pepito">
+                </div>
+                <div>
+                    <label for="apellidos">APELLIDOS*</label><br>
+                    <input class="input" type="text" id="apellidos" required placeholder="Suárez">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="mail">EMAIL*</label><br>
+                    <input class="input" type="text" id="mail" required placeholder="holaquetal@gmail.com">
+                </div>
+                <div>
+                    <label for="tel">TELÉFONO*</label><br>
+                    <input class="input" type="text" id="tel" required placeholder="680987654">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="interes">EN QUÉ ESTÁS INTERESADO*</label><br>
+                    <select name="interes" id="interes">
+                        <option value="coche">PERMISO COCHE</option>
+                        <option value="moto" selected>PERMISO MOTO</option>
+                        <option value="camion">PERMISO CAMIÓN</option>
+                        <option value="trailer">PERMISO TRÁILER</option>
+                        <option value="autobus">PERMISO AUTOBÚS</option>
+                        <option value="remolques">PERMISO REMOLQUES</option>
+                        <option value="otros">OTRO</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="llamada">A QUÉ HORA TE LLAMAMOS*</label><br>
+                    <select name="interes" id="interes">
+                        <option value="hora1">10:00 - 13:30</option>
+                        <option value="hora2">16:30 - 20:30</option>
+                        <option value="hora3" selected>LO ANTES POSIBLE</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="mensaje">MENSAJE</label><br>
+                    <textarea name="" id="" cols="40" rows="5"></textarea>
+                </div>
+                <div style="display: flex; flex-wrap: wrap;" class="opciones">
+                    <input checked type="checkbox" id="terminos" name="terminos" value="terminos">
+                    <h5 for="terminos"> Acepto los términos y condiciones</h5><br>
+                    <input checked type="checkbox" id="ofertas" name="ofertas" value="ofertas">
+                    <h5 for="ofertas"> Acepto recibir ofertas y promociones</h5><br>
+                    <input type="checkbox" id="pruebaGratis" name="pruebaGratis" value="ofpruebaGratisertas">
+                    <h5 for="pruebaGratis"> Quiero apuntarme a la Prueba Gratuita</h5><br>
+                </div>
+                <button type="submit">ENVIAR</button>
+            </div>
+        </div>
+        <!-- . Formulario Md+Lg -->
+        <!-- Preguntas -->
+        <div id="profesionales">
+            <h1>PREGUNTAS FRECUENTES</h1><hr>
+            <div class="p1">
+                <h3>¿Puedo matricularme online y estudiar desde casa?</h3>
+                <div class="dropdown-p1">
+                    <p>Apuntarte a Gines Autoescuela es muuuy fácil porque se hace online, sin salir de casa. 
+                        Y lo mismo con nuestra teórica, que estudias con vídeos muy chulos (dicen que somos el nuevo Netflix, jejeje), 
+                        tests y profes que te responden las dudas.Tenemos una prueba gratis para ti, para que nos pruebes ya! y así 
+                        podrás ver 👀 lo que mola nuestra teórica online.Ahhh... y cuando quieras ir a examen teórico o hacer 
+                        prácticas 🚗, nuestras autoescuelas colaboradoras en Madrid te lo harán todo todito.
+                        ¿A que mola Gines Autoescuela?</p>
+                </div>
+            </div>
+            <div class="p2">
+                <h3>¿Una autoescuela en Sevilla que me devuelve la pasta si no apruebo a la 1ª la teórica? ¿Es verdad?</h3>
+                <div class="dropdown-p2">
+                    <p>Sí, verdad. Nuestro sistema va viendo tu progreso y cuando te sabes la teórica te da "luz verde".
+                         Como todo puede pasar (nervios, te quedaste viendo Netflix y no dormiste...) si tienes tu "luz verde" 
+                         y no apruebas la teórica a la primera, te devolvemos la pasta del curso de teórica, o te ampliamos el 
+                         curso toooodo el tiempo que necesites gratis. Tú eliges, aunque lo normal es que apruebes la teórica 
+                         a la primera y no haya nada que elegir :)?</p>
+                </div>
+            </div>
+            <div class="p3">
+                <h3>¿Cómo lo hago para probaros gratis en Sevilla?</h3>
+                <div class="dropdown-p3">
+                    <p>Para que puedas probar nuestra teórica online te hemos puesto uno de los temas que más salen en el examen totalmente gratis.
+                        Son 7 vídeos donde la profe va explicando, el vídeo se pausa y te salen preguntas de examen de lo que justo te acabamos de explicar.
+                        Sólo tienes que entrar a nuestra web y pulsar donde pone "Prueba gratis".
+                        Ya verás que que con nuestra teórica online, la teórica es más fácil que pelar un plátano.</p>
+                </div>
+            </div>
+            <div class="p4">
+                <h3>Según la DGT, en Sevilla, lo petamos en el práctico</h3>
+                <div class="dropdown-p4">
+                    <p>En Gines Autoescuela aprendes a tu ritmo 🎶 donde quieras y cuando quieras.
+                        Tenemos vídeos molones + tests + esquemas resumen + profes 👤 que te responden las dudas.
+                        Estudias online y con con un equipo humano ❤ que te apoya siempre.
+                        Para hacerte el papeleo y darte prácticas contamos con autoescuelas colaboradoras.
+                        En cada barrio de Sevilla buscamos las autoescuelas que según la DGT tienen los mejores % de aprobados en el examen práctico y sólo ofrecemos colaborar a esas autoescuelas que según la DGT son 🔝.
+                        ¿Ves? Con Súper Express tienes lo mejor de lo mejor 👏<br>
+                        - Lo mejor del mundo online: la comodidad + profes + nuestra garantía de que si no apruebas a la 1ª te devolvemos la pasta. <br>
+                        - Lo mejor del mundo presencial: te gestionamos el papeleo y haces tus prácticas con los mejores porcentajes de aprobado de tu barrio, según la DGT.</p>
+                </div>
+            </div>
+            <div class="p5">
+                <h3>¿Cómo lo hago para probaros gratis en Sevilla?</h3>
+                <div class="dropdown-p5">
+                    <p>Para que puedas probar nuestra teórica online te hemos puesto uno de los temas que más salen en el examen totalmente gratis.
+                        Son 7 vídeos donde la profe va explicando, el vídeo se pausa y te salen preguntas de examen de lo que justo te acabamos de explicar.
+                        Sólo tienes que entrar a nuestra web y pulsar donde pone "Prueba gratis".
+                        Ya verás que que con nuestra teórica online, la teórica es más fácil que pelar un plátano.</p>
+                </div>
+            </div>
+        </div>
+        <!-- . Preguntas -->
+    </div>
+    <!-- . Container -->
+    <!-- Footer Sm -->
+    <footer class="footerSm">
+        <div><img src="img/cocheBlanco.png" id="cocheMini"><img id="logo2" src="img/logo2.PNG" alt=""></div>
+        <div class="Mm">
+            <div class="miniMenu">
+                <div><h5>MINI MENÚ</h5>
+                    <a href="#permisos"><h6>PERMISOS</h6></a>
+                    <a href="gines.html"><h6>MI CUENTA</h6></a>
+                    <a href="#local"><h6>AUTOESCUELA</h6></a>
+                    <a href="#profesionales"><h6>PREGUNTAS FRECUENTES</h6></a>
+                </div>
+                <div><h5>INFORMACIÓN</h5>
+                    <a href="#contacto"><h6>CONTACTO</h6></a>
+                    <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE PRIVACIDAD</h6></a>
+                    <a target="_blank" href="https://www.ionos.es/digitalguide/paginas-web/derecho-digital/aviso-legal-obligatorio-todo-lo-que-necesitas-saber/"><h6>AVISO LEGAL</h6></a>
+                    <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE COOKIES</h6></a>
+                </div>
+            </div>
+            <div id="icons">
+                <img src="img/calendar.png" alt=""><p>Lunes a Viernes: 10:00 - 13:30, 16:30 - 20:30</p> <br>
+                <img src="img/gps2.png" alt=""><p>C/ Colón, 15, Gines (Sevilla), 41960</p> <br>
+                <img src="img/mail2.png" alt=""><p>info@ginesautoescuela.es</p> <br>
+                <img src="img/phone2.png" alt=""><div id="telef"><a href="tel:+95 471 31 12"><p>95 471 31 12 </p></a> <p class="barrita"> / </p> <a href="tel:+34641 37 81 77"><p>641 37 81 77</p></a></div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div>
+                <p>Gines autoescuela &copy; Todos los derechos reservados</p>
+            </div>
+            <div>
+                <img src="img/email.png" class="email">
+                <img src="img/facebook-circular-logo.png">
+                <img src="img/instagram.png">
+            </div>
+        </div>
+    </footer>
+    <!-- . Footer Sm -->
+    <!-- Footer Md+Lg -->
+    <footer class="footerLg">
+        <div><img src="img/cocheBlanco.png" id="cocheMini"><img id="logo2" src="img/logo2.PNG" alt=""></div>
+        <div class="miniMenu">
+            <div><h5>MINI MENÚ</h5>
+                <a href="#permisos"><h6>PERMISOS</h6></a>
+                <a href="gines.html"><h6>MI CUENTA</h6></a>
+                <a href="#local"><h6>AUTOESCUELA</h6></a>
+                <a href="#profesionales"><h6>PREGUNTAS FRECUENTES</h6></a>
+            </div>
+            <div><h5>INFORMACIÓN</h5>
+                <a href="#contacto"><h6>CONTACTO</h6></a>
+                <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE PRIVACIDAD</h6></a>
+                <a target="_blank" href="https://www.ionos.es/digitalguide/paginas-web/derecho-digital/aviso-legal-obligatorio-todo-lo-que-necesitas-saber/"><h6>AVISO LEGAL</h6></a>
+                <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE COOKIES</h6></a>
+            </div>
+            <div id="icons">
+                <img src="img/calendar.png" alt=""><p>Lunes a Viernes: 10:00 - 13:30, 16:30 - 20:30</p> <br>
+                <img src="img/gps2.png" alt=""><p>C/ Colón, 15, Gines (Sevilla), 41960</p> <br>
+                <img src="img/mail2.png" alt=""><p>info@ginesautoescuela.es</p> <br>
+                <img src="img/phone2.png" alt=""><div id="telef"><a href="tel:+95 471 31 12"><p>95 471 31 12 </p></a> <p class="barrita"> / </p> <a href="tel:+34641 37 81 77"><p>641 37 81 77</p></a></div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div>
+                <p>Gines autoescuela &copy; Todos los derechos reservados</p>
+            </div>
+            <div>
+                <img src="img/email.png" class="email">
+                <img src="img/facebook-circular-logo.png">
+                <img src="img/instagram.png">
+            </div>
+        </div>
+    </footer>
+    <!-- . Footer Md+Lg -->
 </body>
 </html>

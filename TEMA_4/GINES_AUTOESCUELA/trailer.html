@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gines Autoescuela</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/cocheLogo.png"type="image/png">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body ondragstart="return false;">
+    <!-- Cabecera Sm -->
+    <header class="cabeceraSm">
+        <div class="topnav">
+            <img src="img/perfil2.png" alt="">
+            <a href="gines.html" class="logoA"><img src="img/logo2.PNG" alt="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="myLinks">
+                <a href="#permisos">PERMISOS DE CONDUCIR</a>
+                <a href="#profesionales">PROFESIONALES</a>
+                <a href="#packs">NUESTROS PACKS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+        </div>
+    </header> 
+    <!-- . Cabecera Sm -->
+    <!-- Cabecera Md+Lg -->
+    <header class="cabeceraLg">
+        <div class="inicioCabecera">
+            <div>
+                <a href="gines.html"><img src="img/cocheLogo.png" alt="" class="imgLogo" style="width: 50px; height: 50px; margin-top: 15px;margin-left: 10px;"></a>
+                <a href="gines.html" class="imgLogo2"><img src="img/logo.PNG" alt=""></a>
+            </div>
+            <div class="menu2">
+                <div>
+                    <img src="img/info.png" alt="">
+                    <h4><a href="gines.html" style="color: #005377;">NUESTRA AUTOESCUELA</a></h4>
+                    <img src="img/phone.png" alt="">
+                    <h4><a href="tel:+95 471 31 12" style="color: #005377;">95 471 31 12</a></h4>
+                    <a href=""><img src="img/perfil.png" alt="" style="width: 50px; height: 50px;"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <div class="dropdown">
+                    <a href="#permisos" class="dropbtn">PERMISOS DE CONDUCIR</a>
+                    <div class="dropdown-content">
+                        <a href="coche.html">COCHE</a>
+                        <a href="moto.html">MOTO</a>
+                        <a href="camion.html">CAMIÓN</a>
+                        <a href="trailer.html">TRÁILER</a>
+                        <a href="autobus.html">AUTOBÚS</a>
+                        <a href="remolques.html">REMOLQUES</a>
+                        <a href="contacto.html">PRÁCTICAS ADICIONALES</a>
+                    </div>
+                </div>
+                
+                <a href="#profesionales">PROFESIONALES</a>
+                <a href="#packs">NUESTROS PACKS</a>
+                <a href="#contacto">CONTACTO</a>
+            </nav>
+        </div>
+    </header>
+    <!-- . Cabecera Md+Lg -->
+    <div class="container">
+        <!-- Info Permisos -->
+        <div class="infoPermisos">
+            <div>
+                <img src="img/trailer.png">
+            </div>
+            <div class="turismo">
+                <h1>PERMISO B TURISMO</h1><hr>
+                <h3>Obtención en Sevilla del permiso de conducir B.
+                    Matricúlate online y asiste a nuestras clases teóricas presenciales. También tendrás acceso a tests online.
+                    El precio incluye 10 clases prácticas.</h3>
+                <h2>170€</h2>
+            </div>
+        </div>
+        <!-- . Info Permisos -->
+        <!-- Descripción Permisos -->
+        <div class="descripcionPermisos">
+            <h1>DESCRIPCIÓN</h1><hr>
+            <div class="descripcionPermisos2">
+                <div>
+                    <h4>LA MATRÍCULA ONLINE DEL PERMISO DE CONDUCIR B INCLUYE</h4>
+                    <ul>
+                        <li>Inscripción</li>
+                        <li>Tramitación de expedientes</li>
+                        <li>Clases teóricas presenciales</li>
+                        <li>Manual y clave online para realizar prácticas de test</li>
+                        <li>Examen teórico</li>
+                        <li>10 clases prácticas</li>
+                        <li>Examen práctico</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h4>EL PRECIO NO INCLUYE</h4>
+                        <ul><li>Tasa de tráfico</li></ul>
+                    </div>
+                    <div>
+                        <h4>REQUISITOS</h4>
+                        <ul>
+                            <li>Tener más de 18 años</li>
+                            <li>Contar con el certificado médico</li>
+                            <li>Residir en España</li>
+                            <li>No estar privado del derecho a conducir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- . Descripción Permisos -->
+        <!-- Permisos de conducir -->
+        <div class="permisos" id="permisos">
+            <h1 style="text-align: center;">REALIZA TU MATRÍCULA ONLINE</h1><hr>
+            <div class="figures">
+                <figure><a href="coche.html"><img src="img/coche.png" alt=""></a></figure>
+                <figure><a href="moto.html"><img src="img/moto.png" alt=""></a></figure>
+                <figure><a href="autobus.html"><img src="img/autobus.png" alt=""></a></figure>
+                <figure><a href="camion.html"><img src="img/camion.png" alt=""></a></figure>
+                <figure><a href="trailer.html"><img src="img/trailer.png" alt=""></a></figure>
+                <figure><a href="remolque.html"><img src="img/remolque.png" alt=""></a></figure>
+            </div>
+        </div>
+        <!-- . Permisos de conducir -->
+    </div>
+    <!-- . Container -->
+    <!-- Footer Sm -->
+    <footer class="footerSm">
+        <div><img src="img/cocheBlanco.png" id="cocheMini"><img id="logo2" src="img/logo2.PNG" alt=""></div>
+        <div class="Mm">
+            <div class="miniMenu">
+                <div><h5>MINI MENÚ</h5>
+                    <a href="#permisos"><h6>PERMISOS</h6></a>
+                    <a href="gines.html"><h6>MI CUENTA</h6></a>
+                    <a href="#local"><h6>AUTOESCUELA</h6></a>
+                    <a href="#profesionales"><h6>PREGUNTAS FRECUENTES</h6></a>
+                </div>
+                <div><h5>INFORMACIÓN</h5>
+                    <a href="#contacto"><h6>CONTACTO</h6></a>
+                    <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE PRIVACIDAD</h6></a>
+                    <a target="_blank" href="https://www.ionos.es/digitalguide/paginas-web/derecho-digital/aviso-legal-obligatorio-todo-lo-que-necesitas-saber/"><h6>AVISO LEGAL</h6></a>
+                    <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE COOKIES</h6></a>
+                </div>
+            </div>
+            <div id="icons">
+                <img src="img/calendar.png" alt=""><p>Lunes a Viernes: 10:00 - 13:30, 16:30 - 20:30</p> <br>
+                <img src="img/gps2.png" alt=""><p>C/ Colón, 15, Gines (Sevilla), 41960</p> <br>
+                <img src="img/mail2.png" alt=""><p>info@ginesautoescuela.es</p> <br>
+                <img src="img/phone2.png" alt=""><div id="telef"><a href="tel:+95 471 31 12"><p>95 471 31 12 </p></a> <p class="barrita"> / </p> <a href="tel:+34641 37 81 77"><p>641 37 81 77</p></a></div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div>
+                <p>Gines autoescuela &copy; Todos los derechos reservados</p>
+            </div>
+            <div>
+                <img src="img/email.png" class="email">
+                <img src="img/facebook-circular-logo.png">
+                <img src="img/instagram.png">
+            </div>
+        </div>
+    </footer>
+    <!-- . Footer Sm -->
+    <!-- Footer Lg -->
+    <footer class="footerLg">
+        <div><img src="img/cocheBlanco.png" id="cocheMini"><img id="logo2" src="img/logo2.PNG" alt=""></div>
+        <div class="miniMenu">
+            <div><h5>MINI MENÚ</h5>
+                <a href="#permisos"><h6>PERMISOS</h6></a>
+                <a href="gines.html"><h6>MI CUENTA</h6></a>
+                <a href="#local"><h6>AUTOESCUELA</h6></a>
+                <a href="#profesionales"><h6>PREGUNTAS FRECUENTES</h6></a>
+            </div>
+            <div><h5>INFORMACIÓN</h5>
+                <a href="#contacto"><h6>CONTACTO</h6></a>
+                <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE PRIVACIDAD</h6></a>
+                <a target="_blank" href="https://www.ionos.es/digitalguide/paginas-web/derecho-digital/aviso-legal-obligatorio-todo-lo-que-necesitas-saber/"><h6>AVISO LEGAL</h6></a>
+                <a target="_blank" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=EAIaIQobChMIw_XAm6Sl7gIV5IBQBh3-dwhfEAAYASAAEgJVmvD_BwE"><h6>POLÍTICA DE COOKIES</h6></a>
+            </div>
+            <div id="icons">
+                <img src="img/calendar.png" alt=""><p>Lunes a Viernes: 10:00 - 13:30, 16:30 - 20:30</p> <br>
+                <img src="img/gps2.png" alt=""><p>C/ Colón, 15, Gines (Sevilla), 41960</p> <br>
+                <img src="img/mail2.png" alt=""><p>info@ginesautoescuela.es</p> <br>
+                <img src="img/phone2.png" alt=""><div id="telef"><a href="tel:+95 471 31 12"><p>95 471 31 12 </p></a> <p class="barrita"> / </p> <a href="tel:+34641 37 81 77"><p>641 37 81 77</p></a></div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div>
+                <p>Gines autoescuela &copy; Todos los derechos reservados</p>
+            </div>
+            <div>
+                <img src="img/email.png" class="email">
+                <img src="img/facebook-circular-logo.png">
+                <img src="img/instagram.png">
+            </div>
+        </div>
+    </footer>
+    <!-- . Footer Lg -->
+</body>
+</html>

@@ -1,0 +1,41 @@
+///@parameter {integer} $num_segundos
+///@group cards
+@mixin duration ($num_segundos){
+    transition: linear #{$num_segundos+"s"};
+}
+
+///@group cards
+///@parameter {integer} $num_vueltas
+@mixin girar($num_vueltas){
+    transform:rotate(#{360*$num_vueltas}deg);
+}
+
+$light-background: $color-blanco;
+$light-text: $color-footer2;
+$dark-background: #484c55;
+$dark-text: #d2e1dd;
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+.container {
+    @include theme-colors($light-theme: true);
+    body.dark & {
+      @include theme-colors($light-theme: false);
+    }
+  }
+  $sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
